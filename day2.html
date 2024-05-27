@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html day2
+    </title>
+</head>
+<body>
+    
+    <audio controls autoplay muted>
+    <source src="m1.mp3" type="audio/mp3">
+</audio>
+
+
+<video height="200px" width="300px" controls muted autoplay loop>
+    <source src="man.mp4">
+</video>
+
+<iframe height="200px" width="300px" src="https://youtu.be/YxWlaYCA8MU?si=oC7Ty24GdB0YKuCp">
+    
+</iframe> -->
+
+
+<!-- Making form from label tag -->
+
+    <h1>HTML Form</h1>
+ <form autocomplete="on">
+    <label for="name">Name :</label><br>
+    <input type="text" id="name" placeholder="name" value="Anit Shrestha"><br><br>
+
+    <label for="fname">Fathers Name:</label><br>
+    <input type="text" id="fname" placeholder="fathers name" value="Ramesh K. Shrestha"><br><br>
+
+    <label for="mname">Mothers Name :</label><br>
+    <input type="text" id="mname" placeholder="mothers name" value="Rita Shrestha"><br><br>
+
+    <label for="bname">Brothers Name :</label><br>
+    <input type="text" id="bname" placeholder="brothers name" value="Laxman Shrestha"><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear" >
+</form> <br><br>
+
+<form>
+    <textarea name="message" rows="10" cols="30">This is an example of testarea</textarea>
+
+    <textarea name="message" style="width:200px; height:150px;">The cat was playing in the garden.</textarea>
+  <br>
+</form>
+
+<p style="color: rgb(37, 161, 37)">This the example of form tag and how to give label for the form to focus on the where we click as shown in the for below</p> 
+
+
+<h2>The Button Element:</h2>
+<button type="button" onclick="alert('Do Not Dare Touching Me')">Touch Me</button>
+<br><br>
+
+
+<h2>Grouping Form Data with Fieldset</h2>
+
+<p style="color:blue;">The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+<form>
+  <fieldset >
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Anit"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Shrestha"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+
+<h2>The datalist Element</h2>
+
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form>
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+
+<h2>The output Element</h2>
+<p>The output element represents the result of a calculation.</p>
+
+<form
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+
+<!-- HTML Input types -->
+
+<!-- <input type="button">
+     <input type="checkbox">
+     <input type="color">
+     <input type="date">
+     <input type="datetime-local">
+     <input type="email">
+     <input type="file">
+     <input type="hidden">
+     <input type="image">
+     <input type="month">
+     <input type="number">
+     <input type="password">
+     <input type="radio">
+     <input type="range">
+     <input type="reset">
+     <input type="search">
+     <input type="submit">
+     <input type="tel">
+     <input type="text">
+     <input type="time">
+     <input type="url">
+     <input type="week"> -->
+
+
+<h1>HTML Graphics</h1>
+
+        <!-- Making a circle from canvas -->
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    </canvas>
+    
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+    </script>  
+ 
+
+
+          <!-- constructing from svg -->
+        <svg width="400" height="120"> -->
+            <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+          </svg>
+           
+
+      
+
+</body>
+</html>
